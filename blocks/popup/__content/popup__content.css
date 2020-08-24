@@ -1,0 +1,49 @@
+.popup__content {
+
+  /*height: 380px;*/
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 24px 36px 34px;
+}
+.popup__content_signup{
+  max-height: 458px;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content {
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .popup__content{
+    width: 430px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .popup__content{
+    width: 430px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup__content{
+    width: 430px;
+    max-height: 380px;
+  }
+  .popup__content_signup{
+    max-height: 458px;
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .popup__content{
+    max-width: 320px;
+    height: 560px;
+    padding: 14px 16px 14px;
+  }
+  .popup__content_signup{
+    max-height: 560px;
+  }
+}

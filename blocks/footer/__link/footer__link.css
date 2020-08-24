@@ -1,0 +1,36 @@
+
+.footer__link{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  margin: 0;
+}
+@media screen and (max-width: 1440px) {
+  .footer__link{
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer__link{
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__link{
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__link {
+margin-bottom: 30px;
+    text-align: left;
+
+  }
+  .footer__link:last-child {
+    margin-bottom: unset;
+
+  }
+}

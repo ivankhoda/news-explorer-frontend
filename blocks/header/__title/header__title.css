@@ -1,0 +1,49 @@
+
+.header__title_theme-white{
+  color: black;
+}
+@media screen and (max-width: 1440px) {
+  .header__title {
+    min-height: 24px;
+    min-width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 104px;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: Roboto Slab, serif;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header__title {
+    max-width: 170px;
+    min-width: 160px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    max-width: 150px;
+    min-width: 140px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__title {
+    max-width: 150px;
+    min-width: 110px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+}

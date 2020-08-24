@@ -1,0 +1,32 @@
+
+
+.author__info-text{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  text-align: left;
+}
+
+@media screen and (max-width: 1440px) {
+  .author__info-text{
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .author__info-text {
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author__info-text {
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 320px) {
+  .author__info-text {
+    min-width: unset;
+  }
+}

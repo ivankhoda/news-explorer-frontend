@@ -1,0 +1,31 @@
+
+.card__image{
+
+  display: flex;
+  justify-content: flex-end;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card__image{
+    min-height: 272px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .card__image{
+    min-height: 272px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__image{
+    min-height: 150px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card__image{
+    min-width: unset;
+    background-size: contain;
+  }
+}

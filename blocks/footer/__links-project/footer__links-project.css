@@ -1,0 +1,30 @@
+
+
+.footer__links-project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__links-project{
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer__links-project{
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__links-project{
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__links-project {
+    min-width: unset;
+    flex-direction: column;
+    text-align: left;
+  }
+}

@@ -1,0 +1,17 @@
+.warn {
+    font-size: 12px;
+    color: #FF0000;
+    margin: 0;
+    /*padding-left: 5px;*/
+    position: relative;
+    /*top: -7px;*/
+    z-index: 99;
+}
+.warn_user {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top:320px;
+  right: 135px;
+
+}

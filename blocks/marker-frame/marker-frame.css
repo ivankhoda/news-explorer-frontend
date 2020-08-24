@@ -1,0 +1,108 @@
+
+
+.marker-frame{
+  min-width: 40px;
+  max-height: 40px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+@media screen and (max-width: 1440px) {
+  .marker-frame{
+    margin-top: 24px;
+
+  }
+}
+@media screen and (max-width: 1280px) {
+  .marker-frame{
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .marker-frame{
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame{
+
+  }
+}
+.marker-frame_info{
+  min-width: 182px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+  .marker-frame_info{
+
+  }
+}
+@media screen and (max-width: 1280px) {
+  .marker-frame_info{
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .marker-frame_info{
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_info{
+    display: none;
+  }
+}
+.marker-frame_saved{
+  min-width: 150px;
+  height: 40px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 1440px) {
+  .marker-frame_saved {
+
+  }
+}
+@media screen and (max-width: 1280px) {
+  .marker-frame_saved {
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .marker-frame_saved {
+    display: none;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_saved {
+
+  }
+}
+.marker-frame_tag {
+  /*margin-right: 80px;*/
+}
+@media screen and (max-width: 1440px) {
+  .marker-frame_tag {
+
+  }
+}
+@media screen and (max-width: 1280px) {
+  .marker-frame_tag {
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .marker-frame_tag {
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_tag {
+
+  }
+}

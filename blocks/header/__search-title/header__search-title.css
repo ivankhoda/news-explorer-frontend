@@ -1,0 +1,39 @@
+
+
+.header__search-title{
+  color: #F2F2F2;
+  text-align: left;
+  font-family: Roboto Slab,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  padding-bottom: 32px;
+  max-width: 576px;
+  margin: 0;
+}
+@media screen and (max-width: 1440px) {
+  .header__search-title {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header__search-title {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__search-title {
+    max-width: 452px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__search-title {
+    max-width: 285px;
+    font-size: 36px;
+    max-height: 80px;
+    line-height: 40px;
+
+  }
+}

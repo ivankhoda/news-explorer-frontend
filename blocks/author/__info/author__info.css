@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 1440px) {
+  .author__info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 56px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .author__info {
+    max-height: 486px;
+    max-width: 486px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author__info {
+    max-width: 424px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .author__info {
+    max-width: 288px;
+    padding: 0;
+  }
+}

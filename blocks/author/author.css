@@ -1,0 +1,30 @@
+@import url(./__about/author__about.css);
+@import url(./__info/author__info.css);
+@import url(./__info-text/author__info-text.css);
+@import url(./__info-title/author__info-title.css);
+@import url(./__photo/author__photo.css);
+
+.author{
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 1280px) {
+  .author {
+    max-width: 1280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author {
+    max-width: 768px;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .author {
+    max-width: 320px;
+flex-direction: column;
+    align-items: center;
+  }
+}

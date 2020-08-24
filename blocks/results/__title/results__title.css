@@ -1,0 +1,37 @@
+
+
+.results__title{
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+}
+.results__title_saved{
+  max-width: 500px;
+  text-align: left;
+  margin: 0;
+
+}
+@media screen and (max-width: 1440px) {
+  .results__title_saved{
+    padding-top: 28px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .results__title_saved{
+    padding-top: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .results__title_saved{
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .results__title_saved{
+
+  }
+}
+

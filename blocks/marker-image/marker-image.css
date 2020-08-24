@@ -1,0 +1,39 @@
+
+
+.marker-image{
+  height: 19px;
+  width: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background-image: url("./images/marker.svg");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  outline: none;
+}
+.marker-image:hover{
+  background-image: url("./images/marker_hover.svg");
+}
+.marker-image:active{
+  background-image: url("./images/marker_marked.svg");
+}
+.marker-image_saved{
+  height: 19px;
+  width: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background-image: url("./images/trash.svg");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  outline: none;
+}
+.marker-image_saved:hover{
+  background-image: url("./images/trash_marked.svg");
+}

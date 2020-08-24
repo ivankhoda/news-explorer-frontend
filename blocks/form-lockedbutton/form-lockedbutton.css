@@ -1,0 +1,31 @@
+
+
+.form-lockedbutton{
+  background: #E6E8EB;
+  border-radius: 100px;
+  border-width: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 64px;
+  width: 360px;
+  color: #B6BCBF;
+  margin-top: 35px;
+}
+.form-lockedbutton_unlocked{
+  background: #2a65cc;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+  .form-lockedbutton{
+    max-width: 320px;
+  }
+
+}

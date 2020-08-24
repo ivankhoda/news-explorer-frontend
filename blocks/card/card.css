@@ -1,0 +1,36 @@
+@import url(./__title/card__title.css);
+@import url(./__date/card__date.css);
+@import url(./__description/card__description.css);
+@import url(./__image/card__image.css);
+@import url(./__text/card__text.css);
+@import url(./__source/card__source.css);
+@import url(./__options/card__options.css);
+
+
+.card {
+  border-radius: 15px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+  .card{
+
+  }
+}
+@media screen and (max-width: 1280px) {
+  .card{
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .card{
+    max-height: 430px;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card{
+    min-width: unset;
+  }
+}

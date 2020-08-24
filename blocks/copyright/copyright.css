@@ -1,0 +1,28 @@
+
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  margin: 0;
+}@media screen and (max-width: 1440px) {
+  .copyright{
+  }
+}
+@media screen and (max-width: 1280px) {
+  .copyright{
+  }
+}
+@media screen and (max-width: 768px) {
+  .copyright {
+  }
+}
+@media screen and (max-width: 320px) {
+  .copyright{
+    order: 2;
+    margin-top: 40px;
+  }
+}

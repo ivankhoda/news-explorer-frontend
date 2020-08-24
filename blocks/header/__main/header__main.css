@@ -1,0 +1,40 @@
+@import url('../__title/header__title.css');
+
+.header__main {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1440px;
+}
+
+.header__main-login {
+  border-bottom: 1px solid #A5A5A5;
+}
+.header__main_login-theme-white{
+  color: black;
+}
+
+.header__main_logout {
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__main  {
+    width: 100%;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__main  {
+    width: 100%;
+    border-bottom: grey solid 0.5px;
+
+  }
+}
+

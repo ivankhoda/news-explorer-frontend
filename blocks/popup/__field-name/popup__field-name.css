@@ -1,0 +1,38 @@
+
+
+
+.popup__field-name{
+  margin: 0;
+  padding-bottom: 9px;
+  font-family: Inter,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2F71E5;
+}
+
+@media screen and (max-width: 1440px) {
+  .popup__field-name{
+    padding-top: 22px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .popup__field-name{
+    padding-top: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup__field-name{
+    padding-top: 22px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popup__field-name{
+    padding-top: 22px;
+  }
+}
+.popup__field-name:last-child{
+  margin: 0;
+  padding-top: 30px;
+}
