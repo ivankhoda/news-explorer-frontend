@@ -31,14 +31,13 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 2,
-              url: false,
             },
           },
           'postcss-loader',
         ],
       },
       {
-        test: /\.(gif|png|jpe?g|ico|svg)$/i,
+        test: /\.(gif|png|jpe?g|ico|svg|jpg)$/i,
         loader: 'file-loader?name=./images/[name].[ext]',
         options: {
           name: '[path][name].[ext]',
@@ -68,6 +67,18 @@ module.exports = {
       hash: true,
       inject: false,
       template: './src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+      },
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      inject: false,
+      filename: 'loggedIn.html',
+      template: path.resolve('./src/loggedIn.html'),
       minify: {
         removeComments: true,
         collapseWhitespace: true,

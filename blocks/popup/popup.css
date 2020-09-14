@@ -27,14 +27,88 @@
   display: none;
 }
 .popup_signin {
+display: none;
+}
+.popup_signin_theme-dark{
   display: none;
+  /*background: black;*/
 }
 .popup_signup{
 display: none;
+}
+.popup_is-opened{
+  display: unset;
+}
+@media (min-width: 561px) and (max-width: 768px)  {
+  .popup{
+    background-color: unset;
+    z-index: 10;
+  }
+  .popup_signin_theme-dark{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    /*background: black;*/
+  }
+}
+@media (min-width: 426px) and (max-width: 560px) {
+  .popup{
+    background-color: unset;
+    z-index: 10;
+  }
+  .popup_signin_theme-dark{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    /*background: black;*/
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .popup{
+    background-color: unset;
+    z-index: 10;
+
+  }
+
+  .popup_signin_theme-dark{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    /*background: black;*/
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .popup{
+    background-color: unset;
+    z-index: 10;
+    position: fixed;
+    top: 57px;
+  }
+
+  .popup_signin_theme-dark{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /*background: black;*/
+  }
 }
 @media screen and (max-width: 320px) {
   .popup{
     background-color: unset;
     z-index: 10;
+    position: fixed;
+    top: 46px;
+  }
+
+  .popup_signin_theme-dark{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /*background: black;*/
   }
 }

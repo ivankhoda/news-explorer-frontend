@@ -6,12 +6,17 @@
     position: relative;
     /*top: -7px;*/
     z-index: 99;
+  line-height: 10px;
+  min-height: 10px;
+  min-width: 250px;
+  display: inline-block;
+  visibility: visible;
 }
 .warn_user {
-  display: flex;
+  display: inline-block;
   align-self: center;
   position: absolute;
-  top:320px;
-  right: 135px;
+  top:370px;
+  right: 73px;
 
 }

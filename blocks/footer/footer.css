@@ -10,31 +10,55 @@
   flex-direction: row;
   background-color: #FFFFFF;
   justify-content: space-between;
-  padding-left: 106px;
-  padding-right: 106px;
-  height: 80px;
+ margin: auto;
+
 }
-@media screen and (max-width: 1440px) {
+@media (min-width: 1441px)  {
   .footer{
+    max-width: 1440px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .footer{
-    padding-left: 106px;
-    padding-right: 106px;
+    max-width: 1280px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .footer{
+
+    max-width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px)  {
   .footer {
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 769px;
   }
 }
+@media (min-width: 421px) and (max-width: 768px)  {
+  .footer {
+    max-width: 421px;
+  }
+}
+@media (min-width: 376px) and (max-width: 420px)  {
+  .footer {
+    max-width: 375px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .footer {
+    min-width: unset;
+    padding: 0;
+    height: unset;
+    max-width: 321px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer {
     min-width: unset;
     padding: 0;
     height: unset;
+    max-width: 320px;
   }
 }
 

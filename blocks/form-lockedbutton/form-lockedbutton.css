@@ -14,18 +14,92 @@
   justify-content: center;
   text-align: center;
   height: 64px;
-  width: 360px;
+  max-width: 360px;
   color: #B6BCBF;
   margin-top: 35px;
+  align-self: center;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
 }
 .form-lockedbutton_unlocked{
   background: #2a65cc;
   color: #FFFFFF;
 }
+.form-lockedbutton_unlocked:hover{
+  cursor: pointer;
+}
+.form-lockedbutton_blocked{
+  color: #B6BCBF;
+  background: #E6E8EB;
+}
+@media (min-width: 1440px) {
+  .form-lockedbutton{
+    min-width: 288px;
+  }
+
+}
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .form-lockedbutton{
+    min-width: 288px;
+  }
+
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .form-lockedbutton{
+    min-width: 288px;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .form-lockedbutton{
+    min-width: 288px;
+  }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px)  {
+  .form-lockedbutton{
+min-width: 288px;
+  }
+
+}
+
+@media (min-width: 376px)and (max-width: 425px) {
+  .form-lockedbutton{
+    width: 288px;
+    margin: 0;
+  }
+
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .form-lockedbutton{
+    max-width: 288px;
+    margin: 0;
+  }
+  .form-lockedbutton_theme-dark{
+    color: white;
+    background: black;
+    border: #F2F2F2 solid 1px;
+    max-width: 330px;
+    margin-top: 15px;
+    width: 330px;
+  }
+
+}
 
 @media screen and (max-width: 320px) {
   .form-lockedbutton{
-    max-width: 320px;
+    max-width: 288px;
+    margin: 0;
+  }
+  .form-lockedbutton_theme-dark{
+    color: white;
+    background: black;
+    border: #F2F2F2 solid 1px;
+    width: 305px;
+    margin-top: 15px;
   }
 
 }

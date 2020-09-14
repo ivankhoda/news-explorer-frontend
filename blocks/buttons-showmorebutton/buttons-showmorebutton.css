@@ -14,26 +14,28 @@
   outline: none;
   border-width: 0;
   align-self: center;
+  margin-top: 64px;
+  margin-bottom: 32px;
 
 }
 .buttons-showmorebutton:hover {
   background: #E6E8EB;
 }
 .buttons-showmorebutton:last-child{
-  margin-bottom: unset;
+  /*margin-bottom: unset;*/
 }
 
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .buttons-showmorebutton{
     margin-top: 64px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .buttons-showmorebutton{
     margin-top: 64px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px)  {
   .buttons-showmorebutton{
     margin-top: 24px;
   }

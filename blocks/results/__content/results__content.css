@@ -4,30 +4,50 @@
   background: #F5F6F7;
   display: flex;
   flex-direction: column;
+  padding-left: 106px;
+  padding-right: 106px;
+
 }
 .results__content_saved {
   background: #F5F6F7;
   padding-top: 60px;
+  padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .results__content{
     padding: 80px 104px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .results__content{
     padding-left: 106px;
     padding-right: 106px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px)  {
   .results__content{
     padding: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .results__content{
+    min-width: unset;
+    max-width: 425px;
+    padding: 20px 20px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .results__content{
+    min-width: unset;
+    max-width: 375px;
+    padding: 20px 20px;
   }
 }
 @media screen and (max-width: 320px) {
   .results__content{
     min-width: unset;
+    max-width: 320px;
+    padding: 20px 20px;
   }
 }

@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 24px;
   padding-bottom: 23px;
-  padding-top: 29px;
+  padding-top: 32px;
   cursor: pointer;
   margin: 0 30px 0 0;
   max-height: 30px;
@@ -11,6 +11,7 @@
   font-style: normal;
   border-bottom-style: solid;
   border-bottom-width: 3px;
+  border-bottom-color: #F2F2F2;
 }
 .header__button:hover {
   border-bottom-style: none;
@@ -20,10 +21,11 @@
 }
 .header__button-link {
   color: #F2F2F2;
+  text-decoration: none;
 }
 .header__button-link_inactive{
   color: #B6BCBF;
-  border-bottom-style: none;
+
 }
 .header__button-img{
   width: 16px;
@@ -56,27 +58,28 @@
 }
 .header__button-link_theme_white{
   color:black;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .header__button {
 
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .header__button {
 
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px)  {
   .header__button {
 
   }
 }
-@media screen and (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 375px) {
   .header__button {
-background-image: url("./images/menu.svg");
+    background-image: url("../../../images/menu.svg");
     background-size: cover;
     text-indent: -9999px;
     /*height: 24px;                        !* be sure to set height & width *!*/
@@ -88,20 +91,52 @@ background-image: url("./images/menu.svg");
     padding-bottom: 16px;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 320px) {
+  .header__button {
+background-image: url("../../../images/menu.svg");
+    background-size: cover;
+    text-indent: -9999px;
+    /*height: 24px;                        !* be sure to set height & width *!*/
+    width: 24px;
+    white-space: nowrap;
+    border-bottom: none;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header__button-auth_theme-white {
+    background-image: url("../../../images/menu__black.svg") !important;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .header__button-auth {
+text-decoration: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .header__button-auth {
 
   }
 }
-
-@media screen and (max-width: 1280px) {
+@media (min-width: 376px) and (max-width: 768px)  {
   .header__button-auth {
 
   }
+  /*.header__button-link_theme_white{*/
+  /*  background-image: url("../../../images/menu__black.svg") !important;*/
+  /*}*/
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 375px) {
   .header__button-auth {
+    display: none;
 
+  }
+  .header__button-link_inactive{
+    display: none;
+  }
+  .header__button-link_theme_white {
+    background-image: url("../../../images/menu__black.svg") !important;
   }
 }
 @media screen and (max-width: 320px) {

@@ -1,4 +1,3 @@
-
 @import url('./__main/header__main.css');
 @import url('./__button/header__button.css');
 @import url('./__buttons/header__buttons.css');
@@ -6,7 +5,10 @@
 @import url('./__search-title/header__search-title.css');
 @import url('./__search-subtitle/header__search-subtitle.css');
 
-@media screen and (max-width: 1440px) {
+.header {
+margin: auto;
+}
+@media (min-width: 1441px) {
   .header {
     min-height: 576px;
     max-width: 1440px;
@@ -15,7 +17,22 @@
     align-items:center;
     border-bottom: 1px solid #A5A5A5;
     margin:auto;
-    background-image:url("./images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .header {
+    min-height: 576px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-bottom: 1px solid #A5A5A5;
+    margin:auto;
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
     background-size: cover;
   }
 }
@@ -24,22 +41,71 @@
   background:white;
   min-height: unset;
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .header {
-    max-width: 1280px;
+    max-width: 1024px;
+    background:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-size: cover;
   }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    max-width: 768px;
+  .header_theme-white {
+    background:white;
+    min-height: unset;
 
   }
 }
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .header {
+    max-width: 769px;
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-size: cover;
+  }
+  .header_theme-white {
+    min-height: unset;
+    background: white;
+  }
+}
+@media (min-width: 421px) and (max-width: 768px)  {
+  .header {
+    max-width: 421px;
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-size: cover;
+  }
+  .header_theme-white {
+    min-height: unset;
+    background: white;
+  }
+}
+@media (min-width: 376px) and (max-width: 420px)  {
+  .header {
+    max-width: 376px;
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg");
+    background-size: cover;
+  }
+  .header_theme-white {
+    min-height: unset;
+    background: white;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .header {
+    max-width: 320px;
+    background-size: cover;
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.svg");
+  }
+  .header_theme-white {
+    min-height: unset;
+    background: white;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header {
     max-width: 320px;
     background-size: cover;
-    background-image:url("./images/georgia-de-lotz--UsJoNxLaNo-unsplash.svg");
-
+    background-image:url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.svg");
+  }
+  .header_theme-white {
+    min-height: unset;
+    background: white;
   }
 }

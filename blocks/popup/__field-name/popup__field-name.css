@@ -10,19 +10,25 @@
   font-size: 12px;
   line-height: 15px;
   color: #2F71E5;
+  padding-top: 22px;
 }
 
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .popup__field-name{
     padding-top: 22px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .popup__field-name{
     padding-top: 22px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px)  {
+  .popup__field-name{
+    padding-top: 22px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
   .popup__field-name{
     padding-top: 22px;
   }

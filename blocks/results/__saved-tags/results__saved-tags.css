@@ -7,25 +7,38 @@
   color: #1A1B22;
   padding-bottom: 56px;
 }
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px)  {
   .results__saved-tags{
     padding-top: 30px;
     padding-bottom: 56px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px)  {
   .results__saved-tags{
     padding-top: 30px;
     padding-bottom: 56px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px)  {
   .results__saved-tags{
     padding-top: 16px;
     padding-bottom: 32px;
     margin: 0;
   }
 }
+@media screen and (max-width: 425px) {
+  .results__saved-tags{
+max-width: 200px;
+    padding-left: unset;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .results__saved-tags{
+
+  }
+}
+
 @media screen and (max-width: 320px) {
   .results__saved-tags{
 
