@@ -25,6 +25,11 @@
     padding-right: 106px;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .results__content{
+    padding: 40px;
+  }
+}
 @media (min-width: 376px) and (max-width: 768px)  {
   .results__content{
     padding: 40px;

@@ -40,7 +40,17 @@
 
   }
 }
-@media (min-width: 376px) and (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .form-button {
+
+  }
+}
+@media (min-width: 421px) and (max-width: 767px)  {
+  .form-button {
+
+  }
+}
+@media (min-width: 376px) and (max-width: 420px)  {
   .form-button {
 
   }

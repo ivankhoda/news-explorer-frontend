@@ -24,9 +24,15 @@
     grid-gap: 18px 18px;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .results__cards{
+    grid-template-columns: repeat( 3, 224px);
+    grid-gap: 10px 10px;
+  }
+}
 @media (min-width: 660px) and (max-width: 768px)  {
   .results__cards{
-    grid-template-columns: repeat( auto-fill, 280px);
+    grid-template-columns: repeat( 3, 224px);
     grid-gap: 10px 10px;
   }
 }

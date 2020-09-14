@@ -11,14 +11,14 @@
     margin: 80px 216px 80px 104px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px)  {
+@media (min-width: 768px) and (max-width: 1024px)  {
   .author__about {
     max-width: 768px;
-    margin: 0;
-    flex-direction: column;
+    margin: auto;
+    flex-direction: row;
   }
 }
-@media (min-width: 376px) and (max-width: 768px)  {
+@media (min-width: 376px) and (max-width: 767px)  {
   .author__about {
     max-width: 376px;
     margin: 0;

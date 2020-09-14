@@ -14,11 +14,19 @@
 
   }
 }
-@media (min-width: 376px) and (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1024px)  {
   .footer__links{
     align-items: start;
     justify-content: space-between;
-    max-width: 288px;
+    /*max-width: 288px;*/
+    order:1;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px)  {
+  .footer__links{
+    align-items: start;
+    justify-content: space-between;
+    /*max-width: 288px;*/
     order:1;
     padding-top: 50px;
     min-height: 80px;

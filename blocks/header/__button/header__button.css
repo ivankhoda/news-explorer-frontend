@@ -72,8 +72,27 @@
 
   }
 }
-@media (min-width: 376px) and (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1024px)  {
   .header__button {
+
+  }
+}
+@media (min-width: 376px) and (max-width: 767px)  {
+  .header__button {
+    background-image: url("../../../images/menu.svg");
+    background-size: cover;
+    text-indent: -9999px;
+    /*height: 24px;                        !* be sure to set height & width *!*/
+    width: 24px;
+    white-space: nowrap;
+    border-bottom: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 25px 0 0;
+
+  }
+  .header__button-auth {
+    display: none;
 
   }
 }
