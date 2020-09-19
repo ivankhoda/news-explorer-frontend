@@ -176,4 +176,7 @@ display: none;
   .header__button-link_inactive{
     display: none;
   }
+  .header__button-link_theme_white {
+    background-image: url("../../../images/menu__black.svg") !important;
+  }
 }
