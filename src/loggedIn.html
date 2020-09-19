@@ -8,84 +8,101 @@
   <meta name="author" content="Ivan Kho"/>
   <title>News Explorer</title>
   <link rel="stylesheet"  href="<%=htmlWebpackPlugin.files.css %>">
-  <link rel="shortcut icon" href="<%=require('../images/N.svg')%>" type="image/svg">
+  <link rel="shortcut icon" href="<%=require('./images/N.svg')%>" type="image/svg">
 </head>
 <body>
 <!--Main_not_logged_in-->
   <!--Main_logged_in-->
-  <header class="header">
-    <div class="header__main header__main-login">
-      <h1 class="header__title">News Explorer</h1>
-      <div class="header__buttons">
-        <p class="header__button header__button-link"><a href="index.html" class="header__button-link">Главная</a></p>
-        <p
-          class="header__button header__button-link header__button-link_inactive"><a
-          href="loggedIn.html#saved" class="header__button-link">Сохраненные
-          статьи</a></p>
-        <p class="header__button-auth">
-          <a>
-            Грета
-            <img class="header__button-img" src="<%=require('../images/enter.svg')%>" alt="Иконка `войти`.">
-          </a>
-        </p>
-      </div>
+<header class="header">
+  <div class="header__main header__main-login">
+    <h1 class="header__title">News Explorer</h1>
+    <div class="header__buttons">
+      <p class="header__button header__button-strips"><a class="header__button-link" href="index.html">Главная
+      </a></p>
+      <p class="header__button-auth"><a class="header__button-link" href="loggedIn.html#loggedIn">Авторизоваться</a></p>
     </div>
-    <div class="header__search">
-      <h1 class="header__search-title">Что в мире творится?</h1>
-      <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-      <div
-        class="form-field"><input class="form-text" type="text" value="Введите тему новости"><button
-        class="form-button">Искать
-      </button>
-      </div>
+  </div>
+  <div class="header__search">
+    <h1 class="header__search-title">Что в мире творится?</h1>
+    <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+    <div
+      class="form-field"><input class="form-text form-text_inputted" type="text" value="Природа" required><button
+      class="form-button">Искать
+    </button>
     </div>
-  </header>
-  <section class="author">
-    <div class="author__about">
-      <img class="author__photo" src="<%=require('../images/avatar.jpg')%>" alt="Фото автора.">
-      <div class="author__info">
-        <h2 class="author__info-title">Об авторе</h2>
-        <p class="author__info-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-          занимаетесь, какими технологиями разработки владеете.
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+  </div>
+</header>
+<main class="root root_theme-white">
+  <section class="results">
+    <div class="results__content">
+      <h2 class="results__title results__title_not-logged">Результаты поиска</h2>
+      <div class="results__cards">
+        <div class="card">
+          <img class="card__image card__image_parks" src="<%=require('./images/image_08.jpg')%>">
+            <div class="marker-frame"><button class="marker marker-image"></button></div>
+          <div class="card__description">
+            <p class="card__date">2 август 2019</p>
+            <h3 class="card__title">Национальное достояние – парки</h3>
+            <p class="card__text"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
+              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          </div>
+          <p class="card__source">Lenta.ru</p>
+        </div>
+
+        <div class="card">
+          <img class="card__image card__image_flower" src="<%=require('./images/flower.jpg')%>">
+            <div class="marker-frame"><button class="marker marker-image"></button></div>
+          <div class="card__description">
+            <p class="card__date">2 август 2019</p>
+            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+              из местных чудес природы.</p>
+
+          </div>
+          <p class="card__source">медуза</p>
+        </div>
+
+        <div class="card">
+          <img class="card__image card__image_leaves" src="<%=require('./images/leaves.jpg')%>">
+            <div class="marker-frame marker-frame_info">
+              <p class="marker
+              marker-info">Войдите, чтобы сохранять статьи
+              </p>
+            </div>
+
+            <div class="marker-frame">
+              <button class="marker marker-image"></button>
+            </div>
+
+          <div class="card__description">
+            <p class="card__date">2 август 2019</p>
+            <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+
+          </div>
+          <p class="card__source">РИА</p>
+        </div>
+
       </div>
+      <button class="buttons-showmorebutton">Показать еще</button>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer__container">
-      <p class="copyright">© 2020 Supersite, Powered by News API</p>
-      <div class="footer__links">
-        <div class="footer__links-project">
-          <a class="footer__link" href="index.html">Главная</a>
-          <a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
-
-        </div>
-        <div class="footer__links-social">
-          <p
-            class="footer__link-social"><a
-            href="https://github.com/ivankhoda" target="_blank"><img src="<%=require('../images/github.svg')%>" alt="Иконка Гитхаб."></a></p>
-          <p
-            class="footer__link-social"><a
-            href="https://www.facebook.com/profile.php?id=100001798331484" target="_blank"><img
-            src="<%=require('../images/facebook.svg')%>" alt="Иконка Фейсбук."></a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!--Main_results_Not_logged in-->
 
   <!--Main_results_loading-->
   <header class="header">
-    <div class="header__main header__main-login">
+    <div class="header__main header__main-login" id="loggedIn">
       <h1 class="header__title">News Explorer</h1>
       <div class="header__buttons">
-        <p class="header__button header__button-link"><a>Главная</a></p>
-        <p class="header__button header__button-link header__button-link_inactive"><a>Сохраненные статьи</a></p>
+        <p class="header__button header__button-link"><a class="header__button-link" href="index.html">Главная</a></p>
+        <p class="header__button header__button-link header__button-link_inactive"><a class="header__button-link"
+                                                                                      href="loggedIn.html#saved"
+        >Сохраненные статьи</a></p>
         <p class="header__button-auth">
-          <a>
+          <a class="header__button-link" href="index.html">
             Грета
-            <img class="header__button-img" src="<%=require('../images/enter.svg')%>" alt="Иконка `войти`.">
+            <img class="header__button-img" src="<%=require('./images/enter.svg')%>" alt="Иконка `войти`.">
           </a>
         </p>
       </div>
@@ -94,7 +111,7 @@
       <h1 class="header__search-title">Что в мире творится?</h1>
       <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
       <div
-        class="form-field"><input class="form-text form-text_inputted" type="text" value="Политика"><button
+        class="form-field"><input class="form-text form-text_inputted" type="text" value="Политика" required><button
         class="form-button">Искать
       </button>
       </div>
@@ -109,7 +126,7 @@
 
   <!--Main_results_Not_found-->
   <div class="preloader-container">
-    <img  class="preloader-not-found-image" src="<%=require('../images/notfound.svg')%>" alt="Картинка не найдена.">
+    <img  class="preloader-not-found-image" src="<%=require('./images/notfound.svg')%>" alt="Картинка не найдена.">
     <h2 class="preloader-not-found">Ничего не найдено</h2>
     <p class="preloader-text">К сожалению, по вашему запросу ничего не найдено.</p>
   </div>
@@ -125,10 +142,10 @@
         <p class="header__button header__button-link header__button-link_theme_white"><a
           href="loggedIn.html#saved" class="header__button-link_theme_white">Сохраненные статьи</a></p>
         <p class="header__button-auth header__button-auth_theme-white">
-          <a>
+          <a class="header__button-link_theme_white" href="index.html">
             Грета
             <img class="header__button-img header__button-img_theme-white"
-                 src="<%=require('../images/enter_theme-white.svg')%>"
+                 src="<%=require('./images/enter_theme-white.svg')%>"
                  alt="Иконка `войти`.">
           </a>
         </p>
@@ -144,7 +161,7 @@
     <div class="results__content results__content_saved">
       <div class="results__cards">
         <div class="card">
-          <div class="card__image card__image_tree-branch">
+          <img class="card__image card__image_tree-branch" src="<%=require('./images/tree_branch.jpg')%>">
             <div class="card__options">
               <div class="marker-frame marker-frame_tag">
                 <p class="marker
@@ -153,7 +170,6 @@
                   <b>Природа</b>
                 </p>
               </div>
-
               <div class="marker-frame marker-frame_saved">
                 <p class="marker
               marker-info marker
@@ -162,7 +178,7 @@
               </div>
               <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
             </div>
-          </div>
+
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
             <h3 class="card__title">Национальное достояние – парки</h3>
@@ -173,7 +189,7 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_desert">
+          <img class="card__image card__image_desert" src="<%=require('./images/desert_with_trees.jpg')%>">
             <div class="card__options">
               <div class="marker-frame marker-frame_tag">
                 <p class="marker
@@ -191,7 +207,6 @@
               </div>
               <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
             </div>
-          </div>
 
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
@@ -204,7 +219,7 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_glass">
+          <img class="card__image card__image_glass" src="<%=require('./images/leaf_in_glass.jpg')%>">
             <div class="card__options">
               <div class="marker-frame marker-frame_tag">
                 <p class="marker
@@ -222,7 +237,7 @@
               </div>
               <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
             </div>
-          </div>
+
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
             <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
@@ -234,7 +249,7 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_glass">
+          <img class="card__image card__image_glass" src="<%=require('./images/leaf_in_glass.jpg')%>">
             <div class="card__options">
               <div class="marker-frame marker-frame_tag">
                 <p class="marker
@@ -252,7 +267,6 @@
               </div>
               <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
             </div>
-          </div>
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
             <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
@@ -264,7 +278,7 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_desert">
+          <img class="card__image card__image_desert" src="<%=require('./images/desert_with_trees.jpg')%>">
             <div class="card__options">
               <div class="marker-frame marker-frame_tag">
                 <p class="marker
@@ -282,7 +296,6 @@
               </div>
               <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
             </div>
-          </div>
 
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
@@ -293,6 +306,17 @@
           <p class="card__source">РИА</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+  <section class="author">
+    <div class="author__about">
+      <img class="author__photo" src="<%=require('./images/avatar.jpg')%>" alt="Фото автора.">
+      <div class="author__info">
+        <h2 class="author__info-title">Об авторе</h2>
+        <p class="author__info-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+          занимаетесь, какими технологиями разработки владеете.
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
       </div>
     </div>
   </section>
@@ -309,11 +333,11 @@
       <div class="footer__links-social">
         <p
           class="footer__link-social"><a
-          href="https://github.com/ivankhoda" target="_blank"><img src="<%=require('../images/github.svg')%>" alt="Иконка Гитхаб."></a></p>
+          href="https://github.com/ivankhoda" target="_blank"><img src="<%=require('./images/github.svg')%>" alt="Иконка Гитхаб."></a></p>
         <p
           class="footer__link-social"><a
           href="https://www.facebook.com/profile.php?id=100001798331484" target="_blank"><img
-          src="<%=require('../images/facebook.svg')%>" alt="Иконка Фейсбук."></a></p>
+          src="<%=require('./images/facebook.svg')%>" alt="Иконка Фейсбук."></a></p>
       </div>
     </div>
   </div>

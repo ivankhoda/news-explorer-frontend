@@ -1,4 +1,4 @@
-import '../pages/index.css';
+import './pages/index.css';
 
 // import Popup from '../js/Popup';
 // import FormValidator from '../js/FormValidator';

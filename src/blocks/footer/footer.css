@@ -1,10 +1,10 @@
 
-@import url(./__container/footer__container.css);
-@import url(./__links/footer__links.css);
-@import url(./__links-project/footer__links-project.css);
-@import url(./__links-social/footer__links-social.css);
-@import url(./__link/footer__link.css);
-@import url(./__link-social/footer__link-social.css);
+@import url(__container/footer__container.css);
+@import url(__links/footer__links.css);
+@import url(__links-project/footer__links-project.css);
+@import url(__links-social/footer__links-social.css);
+@import url(__link/footer__link.css);
+@import url(__link-social/footer__link-social.css);
 .footer{
   display: flex;
   flex-direction: row;

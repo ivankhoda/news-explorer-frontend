@@ -8,7 +8,7 @@
   <meta name="author" content="Ivan Kho"/>
   <title>News Explorer</title>
   <link rel="stylesheet"  href="<%=htmlWebpackPlugin.files.css %>">
-  <link rel="shortcut icon" href="<%=require('../images/N.svg')%>" type="image/svg">
+  <link rel="shortcut icon" href="<%=require('./images/N.svg')%>" type="image/svg">
 </head>
 <body>
 <!--Main_not_logged_in-->
@@ -16,33 +16,23 @@
   <div class="header__main header__main-login">
     <h1 class="header__title">News Explorer</h1>
     <div class="header__buttons">
-      <p class="header__button header__button-strips"><a class="header__button-link">Главная
+      <p class="header__button header__button-strips"><a class="header__button-link" href="index.html">Главная
       </a></p>
-      <p class="header__button-auth"><a class="header__button-link" href="loggedIn.html">Авторизоваться</a></p>
+      <p class="header__button-auth"><a class="header__button-link" href="loggedIn.html#loggedIn">Авторизоваться</a></p>
     </div>
   </div>
   <div class="header__search">
     <h1 class="header__search-title">Что в мире творится?</h1>
     <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
     <div
-      class="form-field"><input class="form-text" type="text" value="Введите тему новости"><button
+      class="form-field"><input class="form-text" type="text" value="Введите тему новости" required><button
       class="form-button">Искать
     </button>
     </div>
   </div>
 </header>
 <main class="root root_theme-white">
-  <section class="author">
-    <div class="author__about">
-      <img class="author__photo" src="<%=require('../images/avatar.jpg')%>" alt="Фото автора.">
-      <div class="author__info">
-        <h2 class="author__info-title">Об авторе</h2>
-        <p class="author__info-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-          занимаетесь, какими технологиями разработки владеете.
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-      </div>
-    </div>
-  </section>
+
   <!--Main_logged_in-->
 
   <!--Main_results_Not_logged in-->
@@ -50,10 +40,10 @@
     <div class="results__content">
       <h2 class="results__title results__title_not-logged">Результаты поиска</h2>
       <div class="results__cards">
+
         <div class="card">
-          <div class="card__image card__image_parks">
+          <img class="card__image card__image_parks" src="<%=require('./images/image_08.jpg')%>">
             <div class="marker-frame"><button class="marker marker-image"></button></div>
-          </div>
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
             <h3 class="card__title">Национальное достояние – парки</h3>
@@ -64,9 +54,9 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_flower">
+          <img class="card__image card__image_flower" src="<%=require('./images/flower.jpg')%>">
             <div class="marker-frame"><button class="marker marker-image"></button></div>
-          </div>
+
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
             <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
@@ -78,17 +68,16 @@
         </div>
 
         <div class="card">
-          <div class="card__image card__image_leaves">
+          <img class="card__image card__image_leaves" src="<%=require('./images/leaves.jpg')%>">
             <div class="marker-frame marker-frame_info">
             <p class="marker
               marker-info">Войдите, чтобы сохранять статьи
             </p>
             </div>
-
             <div class="marker-frame">
               <button class="marker marker-image"></button>
             </div>
-          </div>
+
 
           <div class="card__description">
             <p class="card__date">2 август 2019</p>
@@ -102,26 +91,27 @@
       </div>
       <button class="buttons-showmorebutton">Показать еще</button>
     </div>
+
   </section>
 
-
+  <section class="author">
+    <div class="author__about">
+      <img class="author__photo" src="<%=require('./images/avatar.jpg')%>" alt="Фото автора.">
+      <div class="author__info">
+        <h2 class="author__info-title">Об авторе</h2>
+        <p class="author__info-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+          занимаетесь, какими технологиями разработки владеете.
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </div>
+  </section>
   <!--Main_results_loading-->
-
-  <div class="preloader-container">
-    <i class="circle-preloader"></i>
-    <p class="preloader-text">Идет поиск новостей...</p>
-  </div>
-  <div class="preloader-container">
-    <img  class="preloader-not-found-image" src="<%=require('../images/notfound.svg')%>" alt="Картинка не найдена.">
-    <h2 class="preloader-not-found">Ничего не найдено</h2>
-    <p class="preloader-text">К сожалению, по вашему запросу ничего не найдено.</p>
-  </div>
 
   </section>
 
   <div class="popup popup_signin">
     <div class="popup__content">
-      <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
       <h3 class="popup__title">Вход</h3>
       <form class="popup__form signin-form" name="signin">
         <p class="popup__field-name">Email</p>
@@ -143,7 +133,7 @@
     <div class="header__main header__main-login header__main-login_theme-dark">
       <h1 class="header__title header__title_theme-dark">NewsExplorer</h1>
 
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close popup__close_theme-dark">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_theme-dark">
 
     </div>
     <div class="popup__content popup_content_theme-dark">
@@ -155,7 +145,7 @@
   </div>
   <div class="popup popup_signup">
     <div class="popup__content popup__content_signup">
-      <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
       <h3 class="popup__title">Регистрация</h3>
 
       <form class="popup__form signup-form" name="signup">
@@ -181,7 +171,7 @@
   </div>
   <div class="popup popup_success">
     <div class="popup__content">
-      <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <p class="popup__singup-text"><a class="popup__singup-link" href="">Выполнить вход</a></p>
       </form>
@@ -200,11 +190,11 @@
       <div class="footer__links-social">
         <p
           class="footer__link-social"><a
-          href="https://github.com/ivankhoda" target="_blank"><img src="<%=require('../images/github.svg')%>" alt="Иконка Гитхаб."></a></p>
+          href="https://github.com/ivankhoda" target="_blank"><img src="<%=require('./images/github.svg')%>" alt="Иконка Гитхаб."></a></p>
         <p
           class="footer__link-social"><a
           href="https://www.facebook.com/profile.php?id=100001798331484" target="_blank"><img
-          src="<%=require('../images/facebook.svg')%>" alt="Иконка Фейсбук."></a></p>
+          src="<%=require('./images/facebook.svg')%>" alt="Иконка Фейсбук."></a></p>
       </div>
     </div>
   </div>

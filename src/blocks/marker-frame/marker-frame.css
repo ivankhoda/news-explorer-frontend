@@ -1,0 +1,314 @@
+
+
+.marker-frame{
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  margin-right: 24px;
+  position: absolute;
+
+}
+.marker-frame_tag{
+  position: absolute;
+}
+.marker-frame_delete{
+  position: absolute;
+}
+@media (min-width: 1441px)  {
+  .marker-frame{
+    margin-top: 24px;
+    margin-right: 0;
+    right: 24px;
+  }
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+    position: absolute;
+    right: 70px !important;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 10px !important;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 315px !important;
+  }
+  .marker-frame_saved{
+    top: 10px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .marker-frame{
+    margin-top: 24px;
+    margin-right: 0;
+    right: 24px;
+  }
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+    position: absolute;
+    right: 70px !important;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 10px !important;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 285px !important;
+  }
+  .marker-frame_saved{
+    top: 10px;
+    right: 50px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .marker-frame{
+    margin-top: 24px;
+    margin-right: 0;
+    right: 24px;
+  }
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+    position: absolute;
+    right: 70px !important;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 10px !important;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 285px !important;
+  }
+  .marker-frame_saved{
+    top: 10px;
+    right: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .marker-frame{
+    margin-top: 8px;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 10px !important;
+    margin-right: 0;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 150px !important;
+    min-height: 40px;
+    min-width: 65px;
+  }
+}
+@media (min-width: 426px) and (max-width: 767px)  {
+  .marker-frame{
+    margin-top: 8px;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 5px !important;
+    margin-right: 5px;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 105px !important;
+    min-height: 40px;
+    min-width: 80px;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px)  {
+  .marker-frame{
+    margin-top: 8px;
+  }
+  .marker-frame_delete{
+    top:10px !important;
+    right: 5px !important;
+    margin-right: 5px;
+  }
+  .marker-frame_tag{
+    top:10px !important;
+    right: 105px !important;
+    min-height: 40px;
+    min-width: 80px;
+  }
+}
+@media (min-width: 1440px)  {
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .marker-frame_saved {
+    min-width: 150px !important;
+  }
+  .marker-frame_tag {
+    margin-right:0;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .marker-frame_saved {
+    min-width: 150px !important;
+  }
+  .marker-frame_tag {
+    margin-right:0;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .marker-frame_info{
+    min-width: 182px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .marker-frame_saved {
+    min-width: 150px !important;
+  }
+  .marker-frame_tag {
+    margin-right:0;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 0;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .marker-frame{
+    right: 0;
+  }
+  .marker-frame_info{
+    display: none;
+  }
+  .marker-frame_saved {
+    display: none;
+
+  }
+  .marker-frame_tag {
+    margin-right:0;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 25px;
+  }
+
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .marker-frame_info{
+    display: none;
+  }
+  .marker-frame{
+    right: 0;
+    top:10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_info{
+    display: none;
+  }
+}
+.marker-frame_saved{
+  min-width: 100px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+@media (min-width: 376px) and (max-width: 768px)  {
+  .marker-frame_saved {
+    display: none;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_saved {
+display: none;
+  }
+}
+.marker-frame_tag {
+  /*margin-right: 80px;*/
+}
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .marker-frame_tag {
+    margin-right: 24px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .marker-frame_tag {
+    margin-right: 24px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .marker-frame_tag {
+    margin-right: 24px;
+  }
+
+}
+@media screen and (max-width: 660px) {
+  .marker-frame_tag {
+    margin-right: 15px;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .marker-frame_tag {
+    margin-right: 15px;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .marker-frame_tag {
+    margin-right: 5px;
+  }
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 25px;
+  }
+  .marker-frame_saved {
+    display: none;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .marker-frame_tag {
+    margin-right: 5px;
+  }
+
+  .marker-frame_delete {
+    max-width: 40px;
+    margin-left: 25px;
+  }
+}

@@ -1,5 +1,5 @@
-@import url(./__form/search__form.css);
-@import url(./__buttons/search__buttons.css);
+@import url(__form/search__form.css);
+@import url(__buttons/search__buttons.css);
 .search {
   display: flex;
   flex-direction: row;

@@ -1,9 +1,9 @@
-@import url(./__info/results__info.css);
-@import url(./__title/results__title.css);
-@import url(./__cards/results__cards.css);
-@import url(./__content/results__content.css);
-@import url(./__saved-name/results__saved-name.css);
-@import url(./__saved-tags/results__saved-tags.css);
+@import url(__info/results__info.css);
+@import url(__title/results__title.css);
+@import url(__cards/results__cards.css);
+@import url(__content/results__content.css);
+@import url(__saved-name/results__saved-name.css);
+@import url(__saved-tags/results__saved-tags.css);
 
 .results_saved{
   background: #F2F2F2;

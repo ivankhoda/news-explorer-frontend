@@ -8,13 +8,13 @@
 }
 @media screen and (min-width: 1441px)  {
   .results__cards{
-    grid-template-columns: repeat(auto-fill, 395px);
+    grid-template-columns: repeat(3, 400px);
     grid-gap: 18px 18px;
   }
 }
 @media (min-width: 1281px) and (max-width: 1440px)  {
   .results__cards{
-    grid-template-columns: repeat(auto-fill, 395px);
+    grid-template-columns: repeat(3, 395px);
     grid-gap: 18px 18px;
   }
 }
@@ -32,23 +32,23 @@
 }
 @media (min-width: 660px) and (max-width: 768px)  {
   .results__cards{
-    grid-template-columns: repeat( 3, 224px);
+    grid-template-columns: repeat( auto-fill, 224px);
     grid-gap: 10px 10px;
   }
 }
 @media screen and (max-width: 660px) {
   .results__cards{
     min-width: unset;
-    grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-columns: repeat(auto-fill, 224px);
   }
 }
-@media screen and (max-width: 520px) {
+@media (min-width: 426px) and (max-width: 520px) {
   .results__cards{
     min-width: unset;
-    grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-columns: repeat(auto-fill, 224px);
   }
 }
-@media screen and (max-width: 425px) {
+@media (min-width: 374px )and (max-width: 425px) {
   .results__cards{
     min-width: unset;
     grid-template-columns: repeat(1, 280px);

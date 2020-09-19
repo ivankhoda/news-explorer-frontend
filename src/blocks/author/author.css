@@ -1,63 +1,62 @@
-@import url(./__section/root__section.css);
+@import url(__about/author__about.css);
+@import url(__info/author__info.css);
+@import url(__info-text/author__info-text.css);
+@import url(__info-title/author__info-title.css);
+@import url(__photo/author__photo.css);
 
-.root {
-  background-color: #1A1B22;
-  min-height: 100vh;
-  font-family: Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*max-width: 1440px;*/
+.author{
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  height: auto;
   margin: auto;
 }
+
 @media (min-width: 1441px) {
-  .root{
+  .author {
     max-width: 1440px;
+
   }
 }
 @media (min-width: 1281px) and (max-width: 1440px)  {
-  .root{
+  .author {
     max-width: 1280px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px)  {
-  .root{
+  .author {
     max-width: 1024px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px)  {
-  .root {
+  .author {
     max-width: 768px;
 
   }
 }
 @media (min-width: 421px) and (max-width: 767px)  {
-  .root {
+  .author {
     max-width: 421px;
 
   }
 }
 @media (min-width: 376px) and (max-width: 420px)  {
-  .root {
-    max-width: 376px;
-
-  }
-}
-@media (min-width: 376px) and (max-width: 425px) {
-  .root {
-    max-width: 376px;
+  .author {
+    max-width: 375px;
 
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
-  .root {
+  .author {
     max-width: 320px;
-
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 @media screen and (max-width: 320px) {
-  .root {
+  .author {
     max-width: 320px;
-
+flex-direction: column;
+    align-items: center;
   }
 }

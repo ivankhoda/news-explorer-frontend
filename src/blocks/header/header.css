@@ -1,9 +1,9 @@
-@import url('./__main/header__main.css');
-@import url('./__button/header__button.css');
-@import url('./__buttons/header__buttons.css');
-@import url('./__search/header__search.css');
-@import url('./__search-title/header__search-title.css');
-@import url('./__search-subtitle/header__search-subtitle.css');
+@import url('__main/header__main.css');
+@import url('__button/header__button.css');
+@import url('__buttons/header__buttons.css');
+@import url('__search/header__search.css');
+@import url('__search-title/header__search-title.css');
+@import url('__search-subtitle/header__search-subtitle.css');
 
 .header {
 margin: auto;
