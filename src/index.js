@@ -1,8 +1,8 @@
 import './pages/index.css';
 
-// import Popup from '../js/Popup';
-// import FormValidator from '../js/FormValidator';
-// import Api from '../js/Api';
+import Popup from "./js/components/Popup";
+import FormValidator from './js/components/FormValidator';
+import Api from './js/api/Api';
 //
 // const baseURL = 'https://api.explorenews.ml';
 //
