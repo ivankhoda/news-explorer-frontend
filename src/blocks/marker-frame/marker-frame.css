@@ -150,8 +150,9 @@
 @media (min-width: 426px) and (max-width: 767px)  {
   .marker-frame{
     margin-top: 8px;
-    right: 0;
+    right: 10px;
     top:10px;
+    margin-right: 0;
   }
   .marker-frame_delete{
     top:10px !important;
@@ -168,14 +169,17 @@
     margin-right: 15px;
   }
   .marker-frame_info{
-    display: none;
+    /*display: none;*/
+    right: 55px;
+    min-width: 165px;
   }
 }
 @media (min-width: 376px) and (max-width: 425px)  {
   .marker-frame{
     margin-top: 8px;
-    right: 0;
+    right: 10px;
     top:10px;
+    margin-right: 0;
   }
   .marker-frame_delete{
     top:10px !important;
@@ -192,7 +196,8 @@
     margin-right: 15px;
   }
   .marker-frame_info{
-    display: none;
+    right: 55px;
+    min-width: 165px;
   }
 }
 
@@ -210,7 +215,7 @@
     margin-top: 5px;
   }
   .marker-frame_saved {
-    display: none;
+    /*display: none;*/
 
   }
   .marker-info_saved{
@@ -221,16 +226,18 @@
     margin-right: 0;
   }
   .marker-frame_info{
-    right: 60px !important;
+    right: 55px;
+    min-width: 165px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .marker-frame_info{
-    display: none;
+    right: 55px !important;
+    min-width: 165px;
   }
   .marker-frame_saved {
-    display: none;
+    /*display: none;*/
   }
   .marker-frame_tag {
     margin-right: 5px;
@@ -247,6 +254,7 @@
   }
   .marker-frame{
     right: 10px;
+    margin-right: 0;
   }
 
 }

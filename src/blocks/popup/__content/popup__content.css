@@ -8,7 +8,7 @@
   padding: 24px 36px 34px;
 }
 .popup__content_signup{
-  /*max-height: 458px;*/
+  max-height: 475px;
 }
 
 @media screen and (max-width: 540px) {
@@ -26,6 +26,24 @@
   .popup__content{
     max-width: 430px;
   }
+}
+@media (min-width: 769px) and (max-width: 1024px)  {
+  .popup__content{
+    max-width: 430px;
+    height: 480px;
+    /*padding: 14px 16px 14px;*/
+    max-height: 560px;
+    padding: 17px 16px 14px;
+  }
+  .popup__content_signup{
+    /*max-height: 458px;*/
+  }
+  .popup_content_theme-dark{
+    max-height: 50%;
+    border-radius:0;
+    /*background: black;*/
+  }
+
 }
 @media (min-width: 376px) and (max-width: 768px)  {
   .popup__content{

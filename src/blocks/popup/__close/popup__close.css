@@ -2,14 +2,14 @@
   width: 27px;
   height: 22px;
 position: absolute;
-  top: -26px;
-  right: -26px;
+  top: -20px;
+  right: -25px;
   cursor: pointer;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .popup__close {
-    /*top: 20px;*/
-    /*right: -20px;*/
+    top: -15px;
+    right: -20px;
     width: 20px;
     height: 17px;
     z-index: 100;
