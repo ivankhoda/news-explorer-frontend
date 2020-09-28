@@ -207,6 +207,7 @@
     top:10px;
     right: 150px !important;
     margin-top: 5px;
+    min-width: 60px;
   }
   .marker-frame_delete {
     max-width: 40px;
@@ -215,7 +216,7 @@
     margin-top: 5px;
   }
   .marker-frame_saved {
-    /*display: none;*/
+    display: none;
 
   }
   .marker-info_saved{
@@ -242,9 +243,9 @@
   .marker-frame_tag {
     margin-right: 5px;
     top:10px;
-    right: 200px !important;
+    right: 150px !important;
     margin-top: 5px;
-
+min-width: 60px;
   }
   .marker-frame_delete {
     max-width: 40px;

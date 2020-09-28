@@ -10,4 +10,7 @@ export default class Popup {
   close() {
     this.popup.classList.remove('popup_is-opened');
   }
+  clear() {
+    this.popup.forms.reset();
+  }
 }

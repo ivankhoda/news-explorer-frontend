@@ -5,21 +5,22 @@ export default class Api {
   }
 
   signup(email, password, name) {
-    console.log(this.options.baseURL);
-    return fetch(`${this.options.baseURL}/signup`, {
+    return fetch(`${this.options.BASE_URL}/signup`, {
+      redirect: 'follow',
+      credentials: 'include',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: `${name}`,
-        email: `${email}`,
-        password: `${password}`,
+        name,
+        email,
+        password,
       }),
     })
       .then((res) => {
+        console.log(res)
         if (res.ok) {
-          console.log(res);
           return res.json();
         }
         return Promise.reject(`Error: ${res.status}`);
