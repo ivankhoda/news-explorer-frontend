@@ -3,17 +3,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const webpack = require('webpack');
+const cssnano = require('cssnano');
 
-const isDev = process.env.NODE_ENV === 'development';
-const API = process.env.api;
+// const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js',
+    saved: './src/js/saved-articles/saved.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: '[name]/[name].[hash].js',
   },
+  devtool: 'false',
   module: {
     rules: [
       {
@@ -21,18 +24,16 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
         },
       },
       {
         test: /\.css$/i,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 2,
-            },
-          },
+          { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } },
+          'css-loader',
           'postcss-loader',
         ],
       },
@@ -52,41 +53,24 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'index.[contenthash].css',
-    }),
+    new MiniCssExtractPlugin({ filename: '[name]/[name].[contenthash].css' }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
-      cssProcessor: require('cssnano'),
+      cssProcessor: cssnano,
       cssProcessorPluginOptions: {
         preset: ['default'],
       },
       canPrint: true,
     }),
     new HtmlWebpackPlugin({
-      hash: true,
       inject: false,
       template: './src/index.html',
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true,
-      },
+      filename: 'index.html',
     }),
-
     new HtmlWebpackPlugin({
-      hash: true,
       inject: false,
-      filename: 'loggedIn.html',
-      template: path.resolve('./src/loggedIn.html'),
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true,
-      },
-    }),
-    new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      template: './src/loggedIn.html',
+      filename: './loggedIn.html',
     }),
     new WebpackMd5Hash(),
   ],

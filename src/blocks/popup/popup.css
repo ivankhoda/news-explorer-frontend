@@ -99,16 +99,21 @@ display: none;
   .popup{
     background-color: unset;
     z-index: 10;
-    position: fixed;
-    top: 46px;
+    /*position: fixed;*/
+    /*top: 46px;*/
   }
 
   .popup_signin_theme-dark{
     display: none;
+    flex-direction: column;
+
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
     position: fixed;
     top: 0;
     /*background: black;*/
+  }
+  .popup__close_theme-dark {
+
   }
 }

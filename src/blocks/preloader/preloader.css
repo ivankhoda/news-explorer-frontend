@@ -14,7 +14,20 @@
   align-items: center;
   flex-direction: column;
   margin: auto;
+  display: none;
 }
+
+.preloader-container_is-opened {
+  height: 282px;
+  background: #F5F6F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  display: flex;
+}
+
 @media (min-width: 1441px) {
   .preloader-container {
     max-width: 1440px;

@@ -9,8 +9,15 @@ export default class Popup {
 
   close() {
     this.popup.classList.remove('popup_is-opened');
+    document.forms.signup.reset();
+    document.forms.signin.reset();
+    document.querySelectorAll('.warn')
+      .forEach((warning) => {
+        warning.textContent = '';
+      });
   }
-  clear() {
-    this.popup.forms.reset();
+
+  openMobile() {
+    this.popup.classList.add('popup_is-opened');
   }
 }
