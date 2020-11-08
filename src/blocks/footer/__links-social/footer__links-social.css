@@ -1,0 +1,8 @@
+
+
+.footer__links-social{
+  display: flex;
+  flex-direction: row;
+  min-width: 70px;
+  justify-content: space-around;
+}

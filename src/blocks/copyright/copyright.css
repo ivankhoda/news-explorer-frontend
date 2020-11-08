@@ -1,0 +1,40 @@
+
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  margin: 0;
+}@media (min-width: 1281px) and (max-width: 1440px)  {
+  .copyright{
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .copyright{
+  }
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .copyright {
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .copyright{
+    order: 2;
+    margin-top: 40px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .copyright{
+    order: 2;
+    margin-top: 40px;
+    align-self: center;
+    margin-bottom: 20px;
+
+  }
+}

@@ -1,0 +1,57 @@
+
+.card__image{
+
+  display: flex;
+  justify-content: flex-end;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-height: 272px;
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .card__image{
+    min-height: 272px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .card__image{
+    min-height: 272px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .card__image{
+
+    background-size: cover;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .card__image{
+    min-width: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card__image{
+    min-width: unset;
+    background-size: cover;
+  }
+}
+/*.card__image_flower{*/
+/*  background-image: url("../../../images/flower.jpg");*/
+/*}*/
+/*.card__image_parks{*/
+/*  !*background-image: url("../../../images/image_08.jpg");*!*/
+/*}*/
+/*.card__image_leaves{*/
+/*  background-image: url("../../../images/leaves.jpg");*/
+/*}*/
+/*.card__image_tree-branch{*/
+/*  background-image: url("../../../images/tree_branch.jpg");*/
+/*}*/
+/*.card__image_desert{*/
+/*  background-image: url("../../../images/desert_with_trees.jpg");*/
+/*}*/
+/*.card__image_glass{*/
+/*  background-image: url("../../../images/leaf_in_glass.jpg");*/
+/*}*/

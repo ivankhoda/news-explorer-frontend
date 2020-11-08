@@ -1,0 +1,104 @@
+.popup__close {
+  width: 27px;
+  height: 22px;
+position: absolute;
+  top: -20px;
+  right: -25px;
+  cursor: pointer;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .popup__close {
+    top: -15px;
+    right: -20px;
+    width: 20px;
+    height: 17px;
+    z-index: 100;
+    position: absolute;
+  }
+  .popup__close_theme-dark{
+    top: 17px;
+    right: 25px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    position: absolute;
+
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .popup__close {
+    top: 0;
+    right: -20px;
+    width: 20px;
+    height: 17px;
+    z-index: 100;
+    position: absolute;
+  }
+  .popup__close_theme-dark{
+    top: 17px;
+    right: 25px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    position: absolute;
+
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .popup__close {
+    top: 20px;
+    right: -20px;
+    width: 20px;
+    height: 17px;
+    z-index: 100;
+    position: absolute;
+  }
+  .popup__close_theme-dark{
+    top: 17px;
+    right: 25px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    position: absolute;
+
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .popup__close {
+    top: -32px;
+    right: 15px;
+    width: 20px;
+    height: 17px;
+    z-index: 100;
+    position: absolute;
+  }
+  .popup__close_theme-dark{
+    top: 17px;
+    right: 25px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    position: absolute;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .popup__close {
+    top: -32px;
+    right: 15px;
+    width: 20px;
+    height: 17px;
+    z-index: 100;
+    position: absolute;
+  }
+  .popup__close_theme-dark{
+    top: 17px;
+    right: 25px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    position: absolute;
+
+  }
+}

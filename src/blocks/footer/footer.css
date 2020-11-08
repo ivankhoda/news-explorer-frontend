@@ -1,0 +1,64 @@
+
+@import url(__container/footer__container.css);
+@import url(__links/footer__links.css);
+@import url(__links-project/footer__links-project.css);
+@import url(__links-social/footer__links-social.css);
+@import url(__link/footer__link.css);
+@import url(__link-social/footer__link-social.css);
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+ margin: auto;
+
+}
+@media (min-width: 1441px)  {
+  .footer{
+    max-width: 1440px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .footer{
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .footer{
+
+    max-width: 1024px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .footer {
+    max-width: 768px;
+  }
+}
+@media (min-width: 421px) and (max-width: 767px)  {
+  .footer {
+    max-width: 421px;
+  }
+}
+@media (min-width: 376px) and (max-width: 420px)  {
+  .footer {
+    max-width: 375px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .footer {
+    min-width: unset;
+    padding: 0;
+    height: unset;
+    max-width: 321px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    min-width: unset;
+    padding: 0;
+    height: unset;
+    max-width: 320px;
+  }
+}
+

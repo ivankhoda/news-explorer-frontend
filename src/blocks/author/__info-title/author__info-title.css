@@ -1,0 +1,40 @@
+
+
+.author__info-title{
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+}
+
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .author__info-title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 56px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .author__info-title {
+    padding: 0;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .author__info-title {
+    padding: 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .author__info-title {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__info-title {
+    padding: 0;
+  }
+}

@@ -1,0 +1,37 @@
+@import url(__form/search__form.css);
+@import url(__buttons/search__buttons.css);
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .search{
+    padding-top: 232px;
+    padding-left: 132px;
+    padding-right: 505px;
+    max-width: 1440px;
+  }
+}
+/*@media (min-width: 1025px) and (max-width: 1280px)  {*/
+/*  .search{*/
+/*    padding-top: 232px;*/
+/*    padding-left: 132px;*/
+/*    padding-right: 505px;*/
+/*    max-width: 1280px;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 376px) and (max-width: 768px)  {*/
+/*  .search {*/
+/*    padding: 40px;*/
+/*    max-width: 768px;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 320px) {*/
+/*  .search {*/
+/*    min-width: unset;*/
+/*  }*/
+/*}*/

@@ -1,0 +1,47 @@
+
+.buttons-showmorebutton {
+  width: 288px;
+  min-height: 68px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  margin-bottom: 16px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  align-self: center;
+  margin-top: 64px;
+  margin-bottom: 32px;
+
+}
+.buttons-showmorebutton:hover {
+  background: #E6E8EB;
+}
+.buttons-showmorebutton:last-child{
+  /*margin-bottom: unset;*/
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)  {
+  .buttons-showmorebutton{
+    margin-top: 64px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)  {
+  .buttons-showmorebutton{
+    margin-top: 64px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px)  {
+  .buttons-showmorebutton{
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .buttons-showmorebutton{
+    margin-top: unset;
+  }
+}
