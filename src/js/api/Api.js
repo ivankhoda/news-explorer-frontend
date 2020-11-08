@@ -6,6 +6,7 @@ export default class Api {
   signup(email, password, name) {
     return fetch(`${this.options.BASE_URL}/signup`, {
       method: 'POST',
+      redirect: 'follow',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -27,6 +28,7 @@ export default class Api {
   signin(email, password) {
     return fetch(`${this.options.BASE_URL}/signin`, {
       method: 'POST',
+      redirect: 'follow',
       headers: {
         'Content-Type': 'application/json',
       },
