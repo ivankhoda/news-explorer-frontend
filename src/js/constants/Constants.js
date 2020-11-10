@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api'
+const BASE_URL = 'https://explorenews.ml/api'
 //  'http://explorenews.ml'
   //'http://localhost:3000'
  // 'http://explorenews.ml';
