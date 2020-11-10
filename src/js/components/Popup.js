@@ -32,6 +32,10 @@ export default class Popup {
       this.popup.querySelector('.popup__title').textContent = `Пользователь с таким имейл уже зарегистрировался`;
       this.popup.querySelector('.popup__singup-link_sc').textContent = ``
     }
+    else {
+      this.popup.querySelector('.popup__title').textContent = `Произошла ошибка`;
+      this.popup.querySelector('.popup__singup-link_sc').textContent = ``
+    }
 
     // console.log(this.popup.querySelector('.popup__title').innerText)
   }
