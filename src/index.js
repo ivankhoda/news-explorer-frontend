@@ -14,7 +14,14 @@ import {
   HEADER_STRIPS_BUTTON,
   HEADER,
   SEARCH_FORM,
-  NEWS_API_OPTIONS, MOBILE_CLOSE, AUTH_BUTTON_MOBILE, REG_BUTTON, loggedIn, POPUP_CLOSE_BUTTON,
+  NEWS_API_OPTIONS,
+  MOBILE_CLOSE,
+  AUTH_BUTTON_MOBILE,
+  REG_BUTTON,
+  loggedIn,
+  POPUP_CLOSE_BUTTON,
+  IN_BUTTON,
+  SUCCES_BUTTON, SEARCH_BUTTON, MOBILE_POPUP,
 } from './js/constants/Constants';
 
 import Popup from './js/components/Popup';
@@ -79,7 +86,7 @@ function checkLoginState() {
 checkLoginState();
 // comment
 
-const mobilePopup = new Popup(document.querySelector('.popup_signin_theme-dark'));
+const mobilePopup = new Popup(MOBILE_POPUP);
 HEADER_STRIPS_BUTTON
   .addEventListener('click',
     () => {
@@ -92,14 +99,21 @@ const handleRegistration = () => {
   if (REGISTRATION_BUTTON) {
     REGISTRATION_BUTTON.addEventListener('click', () => {
       event.preventDefault();
-      api.signup(document.forms.signup.name_signup.value,
+      api.signup(
         document.forms.signup.email_signup.value,
-        document.forms.signup.password_signup.value)
+        document.forms.signup.password_signup.value,
+        document.forms.signup.name_signup.value,
+      )
         .then(() => {
           popupSignup.close();
+        })
+        .finally(() => {
           popupSuccess.open();
         })
-        .catch((err) => Promise.reject(`Error: ${err.status}`));
+        .catch((err) => {
+          popupSuccess.showWarn(err);
+          Promise.reject(`Error: ${err.status}`);
+        });
     });
   }
 };
@@ -119,7 +133,10 @@ function signin() {
       location.reload();
       checkLoginState();
     })
-    .catch((err) => Promise.reject(`Error: ${err.status}`));
+    .catch((err) => {
+      popupSuccess.showWarn(err);
+      Promise.reject(`Error: ${err.status}`);
+    });
 }
 SIGNIN_BUTTON.addEventListener('click', () => {
   signin(),
@@ -142,10 +159,10 @@ function openSignin() {
   event.preventDefault();
   popupSignin.open();
 }
-document.querySelector('.popup__singup-link_in')
+IN_BUTTON
   .addEventListener('click',
     () => openSignin());
-document.querySelector('.popup__singup-link_sc')
+SUCCES_BUTTON
   .addEventListener('click',
     () => {
       popupSuccess.close(),
@@ -163,6 +180,7 @@ function formReset() {
 function closePopups() {
   popupSignin.close();
   popupSignup.close();
+  popupSuccess.close();
   document.querySelector('.header__buttons').removeAttribute('style');
 }
 POPUP_CLOSE_BUTTON
@@ -181,10 +199,10 @@ if (loggedIn) {
 }
 cardList.addThreeMoreCards();
 cardList.renderSelf();
-document.querySelector('.form-button__search')
+SEARCH_BUTTON
   .addEventListener('click', () => {
     cardList.preloader(true);
-    const keyword = document.querySelector('.form__search').value;
+    const keyword = SEARCH_FORM.value;
 
     newsApi.getNews(`${keyword}`, sevenDays())
       .then((news) => {

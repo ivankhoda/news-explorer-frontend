@@ -22,7 +22,7 @@ export default class Api {
         }
         return Promise.reject(`Error: ${res.status}`);
       })
-      .catch((err) => Promise.reject(`Error: ${err.status}`));
+      //.catch((err) => Promise.reject(`Error: ${err.status}`));
   }
 
   signin(email, password) {
@@ -37,7 +37,6 @@ export default class Api {
       }),
     })
       .then((res) => {
-        console.log(res);
         if (res.ok) {
           return res.json();
         }
@@ -46,7 +45,7 @@ export default class Api {
       .then((response) => {
         localStorage.setItem('token', `${response.token}`);
       })
-      .catch((err) => Promise.reject(`Error: ${err.status}`));
+      //.catch((err) => Promise.reject(`Error: ${err.status}`));
   }
 
   logout() {
