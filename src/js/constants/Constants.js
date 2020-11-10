@@ -1,4 +1,4 @@
-const BASE_URL = 'https://explorenews.ml/api'
+const BASE_URL = 'http://explorenews.ml/api'
 //  'http://explorenews.ml'
   //'http://localhost:3000'
  // 'http://explorenews.ml';
@@ -17,6 +17,7 @@ const POPUP_SIGNUP = document.querySelector('.popup_signup');
 const POPUP_SUCCESS = document.querySelector('.popup_success');
 const HEADER = document.querySelector('.header__main-login');
 const SEARCH_BUTTON = document.querySelector('.form-button__search');
+const SEARCH_FIELD = document.querySelector('.form__search');
 const HEADER_WHITE = document.querySelector('.header_theme-white');
 const AUTH_BUTTON_MOBILE = document.querySelector('.form-lockedbutton_theme-dark');
 const MOBILE_POPUP = document.querySelector('.popup_signin_theme-dark');
@@ -63,6 +64,7 @@ export {
   SIGNIN_FORM,
   HEADER_AUTHORIZATION_BUTTON,
   HEADER_BUTTONS,
+  SEARCH_FIELD,
   IN_BUTTON,
   SUCCES_BUTTON,
   HEADER_STRIPS_BUTTON,

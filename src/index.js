@@ -21,7 +21,7 @@ import {
   loggedIn,
   POPUP_CLOSE_BUTTON,
   IN_BUTTON,
-  SUCCES_BUTTON, SEARCH_BUTTON, MOBILE_POPUP,
+  SUCCES_BUTTON, SEARCH_BUTTON, MOBILE_POPUP, SEARCH_FIELD,
 } from './js/constants/Constants';
 
 import Popup from './js/components/Popup';
@@ -202,7 +202,7 @@ cardList.renderSelf();
 SEARCH_BUTTON
   .addEventListener('click', () => {
     cardList.preloader(true);
-    const keyword = SEARCH_FORM.value;
+    const keyword = SEARCH_FIELD.value;
 
     newsApi.getNews(`${keyword}`, sevenDays())
       .then((news) => {
