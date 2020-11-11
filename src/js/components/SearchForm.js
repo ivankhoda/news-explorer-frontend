@@ -4,19 +4,30 @@ export default class SearchForm {
   }
 
   validate() {
-    if (this.searchForm.querySelector('.form__search').validity.valueMissing) {
+    if ((this.searchForm.querySelector('.form__search').validity.valueMissing) || (this.searchForm.querySelector('.form__search').value.trim().length === 0)) {
       this.searchForm.querySelector('.form__search').setCustomValidity('Нужно ввести ключевое слово');
       this.searchForm.querySelector('.form__search').reportValidity();
+    }
+    if ((!this.searchForm.querySelector('.form__search').validity.valueMissing) && (!this.searchForm.querySelector('.form__search').value.trim().length === 0)) {
+      this.searchForm.querySelector('.form-button__search').removeAttribute('disabled');
+      this.getKeyword();
     } else {
+
     }
   }
 
-  _addEventListeners() {
-    if (this.searchForm) {
-      this.searchForm.querySelector('.form-button__search').addEventListener('click', (event) => {
-        event.preventDefault();
-        this.validate();
-      });
+  getKeyword() {
+    if (this.searchForm.querySelector('.form__search').value.trim().length === 0) {
+      this.searchForm.querySelector('.form__search').setCustomValidity('Нужно ввести ключевое слово');
+      this.searchForm.querySelector('.form__search').reportValidity();
+      return false;
     }
+    return this.searchForm.querySelector('.form__search').value;
+  }
+
+  addEventListeners() {
+    this.searchForm.querySelector('.form-button__search').addEventListener('click', () => {
+      this.validate();
+    });
   }
 }

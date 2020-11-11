@@ -55,7 +55,7 @@ const newsApi = new NewsApi(NEWS_API_OPTIONS, sevenDays());
 
 const searchForm = new SearchForm(SEARCH_FORM);
 const handleSearch = () => {
-  searchForm._addEventListeners();
+  searchForm.addEventListeners();
 };
 handleSearch();
 const cardList = new CardList(document.querySelector('.results'), [], document.querySelector('.buttons-showmorebutton'));
@@ -97,7 +97,7 @@ MOBILE_CLOSE.addEventListener('click', () => mobilePopup.close());
 // registration
 const handleRegistration = () => {
   if (REGISTRATION_BUTTON) {
-    REGISTRATION_BUTTON.addEventListener('click', () => {
+    REGISTRATION_BUTTON.addEventListener('click', (event) => {
       event.preventDefault();
       api.signup(
         document.forms.signup.email_signup.value,
@@ -139,6 +139,7 @@ function signin() {
     });
 }
 SIGNIN_BUTTON.addEventListener('click', () => {
+  event.preventDefault();
   signin(),
   formReset(),
   popupSignin.close();
@@ -165,6 +166,7 @@ IN_BUTTON
 SUCCES_BUTTON
   .addEventListener('click',
     () => {
+      event.preventDefault();
       popupSuccess.close(),
       popupSignin.open();
     });
@@ -201,32 +203,37 @@ cardList.addThreeMoreCards();
 cardList.renderSelf();
 SEARCH_BUTTON
   .addEventListener('click', () => {
-    cardList.preloader(true);
-    const keyword = SEARCH_FIELD.value;
+    // searchForm.addEventListeners()
+    event.preventDefault();
+    const keyword = searchForm.getKeyword();
+    if (keyword) {
+      cardList.preloader(true);
+      newsApi.getNews(`${keyword}`, sevenDays())
+        .then((news) => {
+          cardList.cleanUp();
+          cardList.removeCards();
 
-    newsApi.getNews(`${keyword}`, sevenDays())
-      .then((news) => {
-        cardList.cleanUp();
-        cardList.removeCards();
-
-        news.articles.forEach((article) => {
-          const card = new Card(article, api,
-            capitalize(keyword),
-            article.title,
-            article.description, article.publishedAt,
-            article.source.name, article.url, article.urlToImage, cardList.savedCards);
-          cardList.addCard(card);
+          news.articles.forEach((article) => {
+            const card = new Card(article, api,
+              capitalize(keyword),
+              article.title,
+              article.description, article.publishedAt,
+              article.source.name, article.url, article.urlToImage, cardList.savedCards);
+            cardList.addCard(card);
+          });
+          cardList.renderSelf();
+          cardList.render();
+        })
+        .finally(() => {
+          cardList.preloader(false);
+          cardList.notFound();
+        })
+        .catch((err) => {
+          cardList.showError(err);
         });
-        cardList.renderSelf();
-        cardList.render();
-      })
-      .finally(() => {
-        cardList.preloader(false);
-        cardList.notFound();
-      })
-      .catch((err) => {
-        cardList.showError(err);
-      });
+    } else {
+
+    }
   });
 cardList.renderSelf();
 cardList.render();
