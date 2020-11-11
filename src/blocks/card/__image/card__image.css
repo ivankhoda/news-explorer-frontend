@@ -6,6 +6,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   min-height: 272px;
+  max-height: 272px;
 }
 
 @media (min-width: 1281px) and (max-width: 1440px)  {

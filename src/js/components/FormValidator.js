@@ -65,14 +65,20 @@ export default class FormValidator {
   }
 
   setEventListeners() {
-    this
-      .form
-      .querySelectorAll('.popup__input')
-      .forEach((input) => { input.addEventListener('input', this.checkInputValidity); });
+    if (this.form) {
+      this
+        .form
+        .querySelectorAll('.popup__input')
+        .forEach((input) => { input.addEventListener('input', this.checkInputValidity); });
 
-    this
-      .form
-      .querySelectorAll('.popup__input')
-      .forEach((input) => { input.addEventListener('input', this.setSubmitButtonState); });
+      this
+        .form
+        .querySelectorAll('.popup__input')
+        .forEach((input) => { input.addEventListener('input', this.setSubmitButtonState); });
+      this
+        .form
+        .querySelectorAll('.form__search')
+        .forEach((input) => { input.addEventListener('input', console.log('Yasss')); });
+    }
   }
 }

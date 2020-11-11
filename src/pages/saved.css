@@ -2,16 +2,10 @@
 @import url(../vendor/fonts.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/search/seach.css);
-@import url(../blocks/form-field/form-field.css);
-@import url(../blocks/form-text/form-text.css);
-@import url(../blocks/form-button/form-button.css);
 @import url(../blocks/buttons-showmorebutton/buttons-showmorebutton.css);
 @import url(../blocks/form-lockedbutton/form-lockedbutton.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/popup/popup.css);
-@import url(../blocks/varn/warn.css);
 @import url(../blocks/preloader/preloader.css);
 @import url(../blocks/results/results.css);
 @import url(../blocks/card/card.css);
@@ -20,9 +14,8 @@
 @import url(../blocks/marker-image/marker-image.css);
 @import url(../blocks/marker-info/marker-info.css);
 
-
 body {
-    background-color: #1A1B22;
+  background-color: #1A1B22;
   /*max-width: 1440px;*/
   margin: auto;
 }

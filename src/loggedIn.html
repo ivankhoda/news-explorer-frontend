@@ -7,296 +7,51 @@
   <meta name="description" content="Дипломная работа Яндекс практикум."/>
   <meta name="author" content="Ivan Kho"/>
   <title>News Explorer</title>
-  <link rel="stylesheet"  href="<%=htmlWebpackPlugin.files.css %>">
-  <link rel="shortcut icon" href="<%=require('./images/N.svg')%>" type="image/svg">
+  <link rel="stylesheet"  href="<%= htmlWebpackPlugin.files.chunks.saved.css %>">
+  <link rel="shortcut icon" href="<%=require('../src/images/N.svg') %>" type="image/svg">
 </head>
 <body>
-<!--Main_not_logged_in-->
-  <!--Main_logged_in-->
-<!--<header class="header">-->
-<!--  <div class="header__main header__main-login">-->
-<!--    <h1 class="header__title">News Explorer</h1>-->
-<!--    <div class="header__buttons">-->
-<!--      <p class="header__button header__button-strips"><a class="header__button-link" href="index.html">Главная-->
-<!--      </a></p>-->
-<!--      <p class="header__button-auth"><a class="header__button-link" href="loggedIn.html#loggedIn">Авторизоваться</a></p>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="header__search">-->
-<!--    <h1 class="header__search-title">Что в мире творится?</h1>-->
-<!--    <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>-->
-<!--    <div-->
-<!--      class="form-field"><input class="form-text form-text_inputted" type="text" value="Природа" required><button-->
-<!--      class="form-button">Искать-->
-<!--    </button>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</header>-->
-<!--<header class="header">-->
-<!--  <div class="header__main header__main-login" id="loggedIn">-->
-<!--    <h1 class="header__title">News Explorer</h1>-->
-<!--    <div class="header__buttons">-->
-<!--      <p class="header__button header__button-link"><a class="header__button-link" href="index.html">Главная</a></p>-->
-<!--      <p class="header__button header__button-link header__button-link_inactive"><a class="header__button-link"-->
-<!--                                                                                    href="loggedIn.html#saved"-->
-<!--      >Сохраненные статьи</a></p>-->
-<!--      <p class="header__button-auth">-->
-<!--        <a class="header__button-link" href="index.html">-->
-<!--          Грета-->
-<!--          <img class="header__button-img" src="<%=require('./images/enter.svg')%>" alt="Иконка `войти`.">-->
-<!--        </a>-->
-<!--      </p>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="header__search">-->
-<!--    <h1 class="header__search-title">Что в мире творится?</h1>-->
-<!--    <p class="header__search-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>-->
-<!--    <div-->
-<!--      class="form-field"><input class="form-text form-text_inputted" type="text" value="Политика" required><button-->
-<!--      class="form-button">Искать-->
-<!--    </button>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</header>-->
+
 <header class="header header_theme-white">
   <div class="header__main header__main-login header__main-login-theme-white">
     <h1 class="header__title header__title_theme-white">News Explorer</h1>
     <div class="header__buttons">
       <p class="header__button header__button-link header__button-link_theme_white header__button-link_inactive"><a
-        href="index.html" class="header__button-link_theme_white">Главная</a></p>
+        href="../index.html" class="header__button-link_theme_white">Главная</a></p>
       <p class="header__button header__button-link header__button-link_theme_white"><a
         href="loggedIn.html#saved" class="header__button-link_theme_white">Сохраненные статьи</a></p>
       <p class="header__button-auth header__button-auth_theme-white">
-        <a class="header__button-link_theme_white" href="index.html" id="greta">
-          Грета
+        <a class="header__button-link_theme_white" id="#"></a>
           <img class="header__button-img header__button-img_theme-white"
-               src="<%=require('./images/enter_theme-white.svg')%>"
-               alt="Иконка `войти`.">
-        </a>
+               src="<%=require('../src/images/enter_theme-white.svg')%>" alt="Иконка `войти`." >
+<!--                 "../src/images/enter_theme-white.svg"-->
+
       </p>
     </div>
   </div>
 </header>
+
+
 <main class="root root_theme-white">
-<!--  <section class="results">-->
-<!--    <div class="results__content">-->
-<!--      <h2 class="results__title results__title_not-logged">Результаты поиска</h2>-->
-<!--      <div class="results__cards">-->
-<!--        <div class="card">-->
-<!--          <img class="card__image card__image_parks" src="<%=require('./images/image_08.jpg')%>">-->
-<!--            <div class="marker-frame"><button class="marker marker-image"></button></div>-->
-<!--          <div class="card__description">-->
-<!--            <p class="card__date">2 август 2019</p>-->
-<!--            <h3 class="card__title">Национальное достояние – парки</h3>-->
-<!--            <p class="card__text"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться-->
-<!--              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>-->
-<!--          </div>-->
-<!--          <p class="card__source">Lenta.ru</p>-->
-<!--        </div>-->
-
-<!--        <div class="card">-->
-<!--          <img class="card__image card__image_flower" src="<%=require('./images/flower.jpg')%>">-->
-<!--            <div class="marker-frame"><button class="marker marker-image"></button></div>-->
-<!--          <div class="card__description">-->
-<!--            <p class="card__date">2 август 2019</p>-->
-<!--            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>-->
-<!--            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного-->
-<!--              из местных чудес природы.</p>-->
-
-<!--          </div>-->
-<!--          <p class="card__source">медуза</p>-->
-<!--        </div>-->
-
-<!--        <div class="card">-->
-<!--          <img class="card__image card__image_leaves" src="<%=require('./images/leaves.jpg')%>">-->
-<!--            <div class="marker-frame marker-frame_info">-->
-<!--              <p class="marker-->
-<!--              marker-info">Войдите, чтобы сохранять статьи-->
-<!--              </p>-->
-<!--            </div>-->
-
-<!--            <div class="marker-frame">-->
-<!--              <button class="marker marker-image"></button>-->
-<!--            </div>-->
-
-<!--          <div class="card__description">-->
-<!--            <p class="card__date">2 август 2019</p>-->
-<!--            <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>-->
-<!--            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>-->
-
-<!--          </div>-->
-<!--          <p class="card__source">РИА</p>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--      <button class="buttons-showmorebutton">Показать еще</button>-->
-<!--    </div>-->
-<!--  </section>-->
-
-  <!--Main_results_Not_logged in-->
-
-  <!--Main_results_loading-->
-
-
-
   <!--Main_results_Saved_news_logged_in-->
 
 
   <section class="results results_saved" id="saved">
     <div class="results__info">
       <p class="results__saved-name">Сохраненные страницы</p>
-      <h2 class="results__title results__title_saved">Грета, у вас 5 сохранённых статей</h2>
-      <p class="results__saved-tags">По ключевым словам: <b>Природа</b>, <b>Тайга</b> и <b>2 другим</b></p>
+      <h2 class="results__title results__title_saved"></h2>
+      <p class="results__saved-tags"></p>
     </div>
     <div class="results__content results__content_saved">
       <div class="results__cards">
-        <div class="card">
-          <img class="card__image card__image_tree-branch" src="<%=require('./images/tree_branch.jpg')%>" alt="Фото-иллюстрация новости.">
-            <div class="card__options">
-              <div class="marker-frame marker-frame_tag">
-                <p class="marker
-              marker-info marker
-              marker-info_saved">
-                  <b>Природа</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_saved">
-                <p class="marker
-              marker-info marker
-              marker-info_saved"><b>Убрать из сохраненных</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
-            </div>
 
-          <div class="card__description">
-            <p class="card__date">2 август 2019</p>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          </div>
-          <p class="card__source">Lenta.ru</p>
-        </div>
 
-        <div class="card">
-          <img class="card__image card__image_desert" src="<%=require('./images/desert_with_trees.jpg')%>" alt="Фото-иллюстрация новости.">
-            <div class="card__options">
-              <div class="marker-frame marker-frame_tag">
-                <p class="marker
-              marker-info marker
-              marker-info_saved">
-                  <b>Природа</b>
-                </p>
-              </div>
-
-              <div class="marker-frame marker-frame_saved">
-                <p class="marker
-              marker-info marker
-              marker-info_saved"><b>Убрать из сохраненных</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
-            </div>
-
-          <div class="card__description">
-            <p class="card__date">2 август 2019</p>
-            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-
-          </div>
-          <p class="card__source">медуза</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image card__image_glass" src="<%=require('./images/leaf_in_glass.jpg')%>" alt="Фото-иллюстрация новости.">
-            <div class="card__options">
-              <div class="marker-frame marker-frame_tag">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved">
-                  <b>Тайга</b>
-                </p>
-              </div>
-
-              <div class="marker-frame marker-frame_saved">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved"><b>Убрать из сохраненных</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
-            </div>
-
-          <div class="card__description">
-            <p class="card__date">2 август 2019</p>
-            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-
-          </div>
-          <p class="card__source">медуза</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image card__image_glass" src="<%=require('./images/leaf_in_glass.jpg')%>" alt="Фото-иллюстрация новости.">
-            <div class="card__options">
-              <div class="marker-frame marker-frame_tag">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved">
-                  <b>Природа</b>
-                </p>
-              </div>
-
-              <div class="marker-frame marker-frame_saved">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved"><b>Убрать из сохраненных</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
-            </div>
-          <div class="card__description">
-            <p class="card__date">2 август 2019</p>
-            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-
-          </div>
-          <p class="card__source">медуза</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image card__image_desert" src="<%=require('./images/desert_with_trees.jpg')%>" alt="Фото-иллюстрация новости.">
-            <div class="card__options">
-              <div class="marker-frame marker-frame_tag">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved">
-                  <b>Природа</b>
-                </p>
-              </div>
-
-              <div class="marker-frame marker-frame_saved">
-                <p class="marker
-                            marker-info marker
-                            marker-info_saved"><b>Убрать из сохраненных</b>
-                </p>
-              </div>
-              <div class="marker-frame marker-frame_delete"><button class="marker marker-image_saved"></button></div>
-            </div>
-
-          <div class="card__description">
-            <p class="card__date">2 август 2019</p>
-            <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-
-          </div>
-          <p class="card__source">РИА</p>
-        </div>
 
       </div>
+      <button class="buttons-showmorebutton">Показать еще</button>
+    </div>
+      </div>
+
     </div>
   </section>
 <!--  <section class="author">-->
@@ -333,10 +88,11 @@
   </div>
 </footer>
 
-<!--<footer class="footer">-->
 
-
-<script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+<script
+  src="<%= htmlWebpackPlugin.files.chunks.saved.entry %>"
+  type="text/javascript"
+></script>
 
 </body>
 </html>

@@ -62,7 +62,7 @@
     flex-direction: row;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-left: 16px;
+    padding-left: 0;
     border-bottom-color: rgba(255, 255, 255, 0.2);
   }
 }
