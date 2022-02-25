@@ -17,7 +17,10 @@
 .marker-image:hover{
   background-image: url("../../images/marker_hover.svg");
 }
-.marker-image:active{
+/*.marker-image:active{*/
+/*  background-image: url("../../images/marker_marked.svg");*/
+/*}*/
+.marker-image_active{
   background-image: url("../../images/marker_marked.svg");
 }
 .marker-image_saved{

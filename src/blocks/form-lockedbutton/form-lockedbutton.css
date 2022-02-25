@@ -75,7 +75,7 @@ min-width: 288px;
 }
 @media (min-width: 321px) and (max-width: 375px) {
   .form-lockedbutton{
-    max-width: 288px;
+    min-width: 288px;
     margin: 0;
   }
   .form-lockedbutton_theme-dark{
@@ -91,7 +91,7 @@ min-width: 288px;
 
 @media screen and (max-width: 320px) {
   .form-lockedbutton{
-    max-width: 288px;
+    min-width: 288px;
     margin: 0;
   }
   .form-lockedbutton_theme-dark{
